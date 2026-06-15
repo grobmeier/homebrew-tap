@@ -5,21 +5,21 @@
 class Humblebee < Formula
   desc "Local-first CLI time tracking"
   homepage "https://www.timeandbill.de/en/humblebee/"
-  version "0.3.0"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/grobmeier/humblebee/releases/download/v0.3.0/humblebee_0.3.0_darwin_amd64.tar.gz"
-      sha256 "1cfd2042c811436688b8d86a68b44b18955d27aba68df06055330a33179dc48d"
+      url "https://github.com/grobmeier/humblebee/releases/download/v0.4.0/humblebee_0.4.0_darwin_amd64.tar.gz"
+      sha256 "fb7a5047c0d407c34e06cb9ed22d86f4a4e21997b642590f83fa4bf03e6acae1"
 
       define_method(:install) do
         bin.install "humblebee"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/grobmeier/humblebee/releases/download/v0.3.0/humblebee_0.3.0_darwin_arm64.tar.gz"
-      sha256 "edaffabe052c6ead7e7990150d2b0f73ba951a3ac2a7cc268081b2d7ab3b1177"
+      url "https://github.com/grobmeier/humblebee/releases/download/v0.4.0/humblebee_0.4.0_darwin_arm64.tar.gz"
+      sha256 "cbcb9eeaabea0c101c743ccd442387c85b8d45d3d271d437e20faec8110257b4"
 
       define_method(:install) do
         bin.install "humblebee"
@@ -29,15 +29,15 @@ class Humblebee < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grobmeier/humblebee/releases/download/v0.3.0/humblebee_0.3.0_linux_amd64.tar.gz"
-      sha256 "b81c84b97d6567b340554ea756697c046428e80f6c0e1a902d0191ae1c44e4c6"
+      url "https://github.com/grobmeier/humblebee/releases/download/v0.4.0/humblebee_0.4.0_linux_amd64.tar.gz"
+      sha256 "8d8c45daf30bbb4992c0ac0cc5c543240c1e0bf90b88e523abbe4540ec576af7"
       define_method(:install) do
         bin.install "humblebee"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grobmeier/humblebee/releases/download/v0.3.0/humblebee_0.3.0_linux_arm64.tar.gz"
-      sha256 "943a31963907b4b6358db2a7cb6f5a774cc05dfb083ec5d7f6a527a6739c6d69"
+      url "https://github.com/grobmeier/humblebee/releases/download/v0.4.0/humblebee_0.4.0_linux_arm64.tar.gz"
+      sha256 "00285ba10572a76a7f4c36b554b102115551322e5518615c08d033c7f2aed9c2"
       define_method(:install) do
         bin.install "humblebee"
       end
